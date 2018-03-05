@@ -1,0 +1,33 @@
+<% layout('layout') -%>
+
+	<nav>
+		<div class="navwrap">
+			<a href="/">首頁</a>
+			<a href="/login">登入</a>
+		</div>
+	</nav>
+	<div class="wrap">
+		<form action="/signup" method="post">
+    <h1>
+			<%= title %>
+		</h1>
+    <div class="row">
+      <label>Email：</label>
+      <input class="text" type="text" name="email" />
+    </div>
+    <div class="row">
+      <label>Password：</label>
+      <input class="text" type="password" name="passwd" />
+    </div>
+    <div class="row">
+      <label>Nickname：</label>
+      <input class="text" type="text" name="nickname" />
+    </div>
+    <div class="row">
+      <input class="btn" type="submit" value="註冊" />
+    </div>
+    <p class="error-message">
+			<%= error %>
+		</p>
+  </form>
+	
